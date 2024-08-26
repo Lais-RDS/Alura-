@@ -3,12 +3,30 @@ function sortear() {
   let origem = parseInt(document.getElementById('de').value);
   let final = parseInt(document.getElementById('ate').value);
   
-  alert(`quantidade: ${quantidade}`);
-  alert(`do numero: ${origem}`);
-  alert(`até o numero: ${final}`);
-  let numero = obterNumerosAleatorios (origem , final);
-}
+  let sorteados = [];
+  let numero;
+
+   for (let i = 0; i < quantidade; i++){
+      numero = obterNumerosAleatorios (origem , final);
+      while (sorteados.includes(numero)){
+        numero = obterNumerosAleatorios (origem , final)
+      }
+      sorteados.push(numero);
+    }
+  
+
+
+  let resultado = document.getElementById('resultado');
+  resultado.innerHTML = `<label class="texto__paragrafo" id="QtdNumeroSorteados">Números sorteados: ${sorteados} </label>`;
+
+  }
+
+
 
 function obterNumerosAleatorios (min, max){
-  return Math.random() * (max - min) + min 
+  return Math.floor(Math.random() * (max - min + 1)) + min; 
+}
+
+function Reiniciar () {
+  
 }
