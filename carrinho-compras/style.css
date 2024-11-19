@@ -38,7 +38,7 @@ input[type="number"] {
 }
 
 .texto-medio-azul {
-  color: var(--Light-Blue, #000000);
+  color: var(--Light-dark, #000000);
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
@@ -78,7 +78,7 @@ input[type="number"] {
   margin-bottom: 2.5rem;
 }
 
-.texto-azul {
+.texto-roxo {
   color: #57449a;
 }
 
@@ -101,7 +101,7 @@ input[type="number"] {
   height: 3.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--Light-Blue, #57449a);
+  border: 1px solid var(--Light-purple, #57449a);
 
   color: var(--Void, #01080E);
   font-family: Inter;
@@ -121,7 +121,7 @@ input[type="number"] {
   align-items: center;
   gap: 0.625rem;
   border-radius: 0rem 0.5rem 0.5rem 0rem;
-  border: 1px solid var(--Light-Blue, #57449a);
+  border: 1px solid var(--Light-purple, #57449a);
   cursor: pointer;
 }
 
@@ -137,7 +137,7 @@ input[type="number"] {
   padding: 1rem;
   width: 4.5rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--Light-Blue, #57449a);
+  border: 1px solid var(--Light-purple, #57449a);
 
   color: var(--Void, #01080E);
   font-family: Inter;
@@ -167,7 +167,7 @@ input[type="number"] {
 }
 
 .botao-adicionar {
-  background: var(--Light-Blue, #57449a);
+  background: var(--Light-purple, #57449a);
   box-shadow: 0px 0px 20px 0px rgba(1, 8, 14, 0.50);
 
   color: var(--Branco, #FFF);
