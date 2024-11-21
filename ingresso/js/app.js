@@ -3,6 +3,11 @@
 function comprar(){
     let tipo = document.getElementById('tipo-ingresso')
     let qtd = parseInt(document.getElementById('qtd').value);
+
+    if (isNaN(qtd) || qtd <= 0) {
+        alert('Por favor, insira uma quantidade válida.');
+        return;
+    }
     
     if (tipo.value == 'pista'){
         comprarPista(qtd);
