@@ -13,3 +13,4 @@ function alterarStatus(id) {
       botao.textContent = 'Devolver';
   }
 }
+//verificando
